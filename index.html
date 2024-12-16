@@ -1,0 +1,855 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>PHP Form Builder - Bootstrap Form Generator - 20+ jQuery plugins</title>
+    <meta content="PHP Form Builder is a PHP package to create any Bootstrap, Material Design and Foundation form. Add any plugin with a single line of code: datepicker, file uploader, recaptcha, ..." name="description">
+    <meta content="Gilles Migliori" name="author">
+    <meta content="Gilles Migliori" name="copyright">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="preload" href="documentation/assets/stylesheets/all.min.css" as="style" onload="this.rel='stylesheet'">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.min.css" as="style" onload="this.rel='stylesheet'">
+</head>
+
+<body data-offset="180" data-bs-spy="scroll" data-target="#navbar-left-wrapper" style="padding-top:76px;">
+
+    <!-- Main navbar -->
+
+    <nav id="website-navbar" class="navbar navbar-dark bg-dark navbar-expand-lg px-2 px-lg-0 fixed-top">
+
+        <div class="container-fluid px-0">
+            <a class="navbar-brand me-3" href="index.html"><img src="documentation/assets/images/phpformbuilder-logo.png" width="60" height="60" class="me-3" alt="PHP Form Builder" title="PHP Form Builder">PHP Form Builder</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navcol-1">
+
+                <ul class="nav navbar-nav ms-auto">
+
+                    <!-- https://www.phpformbuilder.pro navbar -->
+
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="drag-n-drop-form-builder/index.html">Drag &amp; drop Form Builder</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/quick-start-guide.php">Quick Start Guide</a></li>
+                    <li class="nav-item"><a class="nav-link" href="templates/index.php">Form Templates</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/javascript-plugins.php">Javascript plugins</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/code-samples.php">Code Samples</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/class-doc.php">Class Doc.</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/functions-reference.php">Functions Reference</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentation/help-center.php">Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main sidebar -->
+
+    <div id="navbar-left-toggler-wrapper" class="navbar-light fixed-top p-2 d-lg-none d-xl-none">
+        <button id="navbar-left-toggler" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+    </div>
+
+    <div id="navbar-left-wrapper" class="w3-animate-left">
+        <a href="#" id="navbar-left-collapse" class="d-flex justify-content-end d-lg-none d-xl-none text-white p-4"><i class="bi bi-x-lg"></i></a>
+
+        <ul id="navbar-left" class="nav nav-pills flex-column flex-shrink-0 pt-1 mb-4">
+            <li class="nav-item"><a class="nav-link active" href="#overview">Overview</a></li>
+            <li class="nav-item"><a class="nav-link" href="#where-to-start">Where to start?</a></li>
+            <li class="nav-item"><a class="nav-link" href="#package-structure">Package structure</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#themes">Themes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#license-registration">License and Registration</a></li>
+            <li class="nav-item"><a class="nav-link" href="#upgrade-phpformbuilder">Upgrade PHP Form Builder</a></li>
+            <li class="nav-item"><a class="nav-link" href="#visual-studio-code-extension">Visual Studio Code extension</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sublime-text-plugin">Sublime Text plugin</a></li>
+            <li class="nav-item"><a class="nav-link" href="#changelog">Changelog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#credits">Sources &amp; Credits</a></li>
+            <li class="nav-item"><a class="nav-link" href="#miglisoft">About the author</a></li>
+            <li class="nav-item"><a class="nav-link" href="#subscribe">Stay tuned (<small>Mailing List</small>)</a></li>
+
+        </ul>
+        <!-- navbar-left -->
+    </div>
+    <!-- /main sidebar -->
+
+    <main class="container">
+
+        <section class="mb-6">
+
+            <h1 id="overview" class="text-center text-primary mb-5"><small class="d-inline-block my-3">Thank you for purchasing</small><br>
+            PHP Form Builder<br>
+            <small>PHP Form Generator Class - Save tons of programming hours</small></h1>
+
+            <p class="fs-3 fw-bold px-3 py-4 mb-5 text-center text-white bg-primary">Open the <a class="text-warning text-decoration-underline" href="documentation/quick-start-guide.php">Quick Start Guide</a><br><small class="fw-light">to register your copy &amp; get started</small></p>
+
+            <h4>For any question or request</h4>
+
+            <ul>
+                <li>Take a look at the <a href="help-center.php">Help Center</a>
+                </li>
+
+                <li>Contact me through <a href="https://codecanyon.net/item/php-form-builder/8790160/comments">PHP Form Builder's comments on Codecanyon</a>
+                </li>
+
+                <li>E-mail me at <a href="https://www.miglisoft.com/#contact">https://www.miglisoft.com/#contact</a>
+                </li>
+
+                <li>Chat on <a href="https://www.phpformbuilder.pro">www.phpformbuilder.pro</a>
+                </li>
+            </ul>
+
+            <div class="alert alert-warning has-icon mb-5">
+                <p><strong>If you feel lost or have any trouble, please contact me</strong>
+                </p>
+
+                <ul>
+                    <li>I can build you a form for free, or for a small fee if your form is a complex one</li>
+
+                    <li>I can propose a refund if PHP Form Builder doesn't match what you intended</li>
+                </ul>
+            </div>
+
+            <h4>Please if you like Php Form Builder</h4>
+
+            <p>Don't forget to rate it at <a href="https://codecanyon.net/downloads">https://codecanyon.net/downloads</a> (login to your account and go to download page) And/Or drop a review at <a href="https://goo.gl/teKs6x">https://goo.gl/teKs6x</a></p>
+
+        </section>
+        <!--=======================================
+                =            START COMMON PART            =
+                ========================================-->
+
+        <!-- Where to start ? -->
+
+        <section class="mb-6">
+
+            <h2 id="where-to-start">Where to start?</h2>
+            <p class="lead">Depending on your preferences:</p>
+
+            <article>
+
+                <h3>Quick and easy form building</h3>
+
+                <dl class="dl-horizontal">
+                    <dt><a href="https://www.phpformbuilder.pro/drag-n-drop-form-builder/index.php" class="btn btn-primary w-100" title="Drag &amp; Drop Form Builder">Drag &amp; Drop<br>Form Generator</a></dt>
+                    <dd>You'll just have to drag and drop the form elements, choose your settings then paste the generated code.</dd>
+                </dl>
+
+                <h3>PHP Beginners</h3>
+
+                <dl class="dl-horizontal">
+                    <dt><a href="https://www.phpformbuilder.pro/documentation/beginners-guide.php" class="btn btn-primary w-100" title="Beginners Guide">Beginners Guide</a></dt>
+                    <dd>Tutorial for PHP beginners including full detailed explanations</dd>
+                </dl>
+
+                <h3>PHP Programmers</h3>
+
+                <dl class="dl-horizontal">
+                    <dt><a href="https://www.phpformbuilder.pro/documentation/quick-start-guide.php" class="btn btn-primary w-100" title="Quickstart Guide">Quickstart Guide</a></dt>
+                    <dd>Quick and easy start with minimum required.</dd>
+                </dl>
+
+                <h3>About functions and how to</h3>
+
+                <dl class="dl-horizontal">
+                    <dt><a href="https://www.phpformbuilder.pro/documentation/class-doc.php" class="btn btn-primary w-100" title="Class documentation">Class documentation</a></dt>
+                    <dd>Full class documentation.</dd>
+                    <dd class="line-break"></dd>
+                    <dt><a href="https://www.phpformbuilder.pro/documentation/code-samples.php" class="btn btn-primary w-100" title="Code Samples">Code Samples</a></dt>
+                    <dd>FAQ with code examples to help with layout, icons, plugins, dependent fields, etc.</dd>
+                    <dd class="line-break"></dd>
+                    <dt><a href="https://www.phpformbuilder.pro/documentation/functions-reference.php" class="btn btn-primary w-100" title="Functions reference">Functions reference</a></dt>
+                    <dd>All functions &amp; arguments.</dd>
+                </dl>
+            </article>
+        </section>
+
+        <!-- Package Structure -->
+
+        <section class="mb-6">
+
+            <h2 id="package-structure">Package Structure</h2>
+            <p>PHP Form Builder's package includes the Form Builder itself, the documentation, and hundreds of templates.</p>
+            <p class="alert alert-warning has-icon">You don't have to upload all the files and folders on your production server.</p>
+            <p><span class="fw-bold">Documentation and Templates are available online at <a href="https://www.phpformbuilder.pro/">https://www.phpformbuilder.pro/</a>.<br>There's no need to upload them on your production server.</span></p>
+            <p class="lead text-pink "><strong>You only have to upload the following directories on your server:</strong></p>
+
+            <div class="tree">
+
+                <ul class="tree-list">
+                    <li><a href="#" class="folder">your-project-root</a>
+
+                        <ul class="tree-list">
+                            <li><a href="#" class="folder">file-uploads</a> <span class="text-muted ms-2">Upload folder used with the file upload plugin</span></li>
+                            <li><a href="#" class="folder">phpformbuilder</a> <span class="text-muted ms-2">Main form builder files, including all the plugins</span></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <ul>
+                <li>The <em>file-uploads</em> folder is not required if you don't use the <em>file-upload</em> plugin or choose to upload your files elsewhere.</li>
+            </ul>
+
+            <h3>The <em>phpformbuilder</em> folder structure</h3>
+
+            <div class="tree">
+
+                <ul class="tree-list">
+                    <li><a href="#" class="folder">your-project-root</a>
+
+                        <ul class="tree-list">
+                            <li>
+                                <a href="#" class="folder">phpformbuilder</a> <span class="text-muted ms-2">Main form builder files, including all the plugins</span>
+
+                                <ul class="tree-list">
+                                    <li><a href="#" class="folder">class</a> <span class="text-muted ms-2">The PHP models for the PHP Form Builder.</span></li>
+                                    <li><a href="#" class="folder">mailer</a> <span class="text-muted ms-2">The email templates and a test file to test email sending on your server.</span></li>
+                                    <li><a href="#" class="folder">plugins</a> <span class="text-muted ms-2">All the plugins. You don't need to upload on your server the plugins you don't use in your forms.</span></li>
+                                    <li><a href="#" class="folder">plugins-config</a> <span class="text-muted ms-2">All the plugins' configuration files ("domready" codes stored into XML files). You don't need to upload on your server the plugins you don't use in your forms.</span></li>
+                                    <li><a href="#" class="folder">plugins-config-custom</a> <span class="text-muted ms-2">Empty folder to store your plugin configurations files if you customize.</span></li>
+                                    <li><a href="#" class="folder">vendor</a> <span class="text-muted ms-2">The vendor packages used by PHP Form Builder. E.g.: PowerLite PDO, PHP-DI, PHPMailer.</span></li>
+                                    <li><a href="#" class="file">autoload.php</a> <span class="text-muted ms-2">PHP Form Builder's main autoloader.</span></li>
+                                    <li><a href="#" class="file">curl-test.php</a> <span class="text-muted ms-2">Test your PHP cUrl functionality.</span></li>
+                                    <li><a href="#" class="file">register.php</a> <span class="text-muted ms-2">Register & activate your PHP Form Builder copy from here.</span></li>
+                                    <li><a href="#" class="file">server.php</a> <span class="text-muted ms-2">File used for debugging purposes if you encounter paths issues on your server.</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Features -->
+
+        <section class="mb-6">
+
+            <h2 id="features">Features</h2>
+
+            <ul>
+                <li>
+                    <p>Form generation with complex layout capabilities (horizontal, vertical, inline)
+                        <br>PHP Form Builder generates clean HTML5 markup, with separates functions to render form, generate CSS and JS code, so you can render them separately (generally in &lt;head&gt; or just before &lt;/body&gt;).
+                    </p>
+                </li>
+                <li>
+                    <p>Creates Bootstrap 4 Forms, Bootstrap 5 Forms, Bulma Forms, Foundation Forms, Material Design Forms, Tailwind Forms, uiKit Forms.</p>
+                </li>
+                <li>
+                    <p>Compatible with any framework or can be used standalone.</p>
+                </li>
+                <li>
+                    <p>Accepts any HTML5 form elements, including fieldsets, multiple selects, optgroups, button groups, ...</p>
+                </li>
+                <li>
+                    <p>Allows customizing HTML with wrappers, IDs, classes and attributes, JavaScript events, custom code anywhere.</p>
+                </li>
+                <li>
+                    <p>Server-side validation can be done on any destination page; errors are stored in the PHP session.</p>
+                </li>
+                <li>
+                    <p>Sends your emails with a simple or advanced function.</p>
+                </li>
+                <li>
+                    <p>Detects and replaces posted values in default or custom HTML/CSS template. Uses PHPMailer and Emogrifier to inline CSS.</p>
+                </li>
+                <li>
+                    <p>Uses PHPMailer with or without SMTP and Emogrifier to inline CSS.</p>
+                </li>
+                <li>
+                    <p>XSS / CSRF Protection</p>
+                </li>
+                <li>
+                    <p>PDO Database library included to prefill fields with values from your database easily, Create/Read/Update/Delete elements using the posted values (CRUD operations).</p>
+                </li>
+                <li>
+
+                    <h3>High-quality JavaScript plugins, including:</h3>
+
+                    <p class="h4 mb-1">Checkboxes, Radio buttons &amp; Selects</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#pretty-checkbox-example">Pretty Checkbox</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#select2-example">Select2</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#slimselect-example">Slimselect</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#bootstrap-select-example">Bootstrap Select</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#icheck-example">iCheck</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#nice-check-example">Nice Check</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#lcswitch-example">LC-Switch</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Pickers</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#colorpicker-example">Colorpicker</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#litepicker-example">Litepicker (Date / Date range picker)</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#image-picker-example">Image picker</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#material-datepicker-example">Material Design Datepicker</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#material-timepicker-example">Material Design Timepicker</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#pickadate-example">Pickadate Datepicker</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#pickadate-timepicker-example">Pickadate Timepicker</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Validation, Captcha &amp; Anti-SPAM</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#formvalidation">Formvalidation</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#altcha-example">Altcha / Anti-SPAM</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#js-captcha-example">JS-Captcha</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#hcaptcha-example">HCaptcha</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#recaptchav3-example">Google Recaptcha</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Modal &amp; Popover</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#modal-example">Modal</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#popover-example">Popover</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Uploaders</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#fileuploader">File Uploader</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Text Editors</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#tinymce-example">Tinymce</a></li>
+                        </ul>
+                    </div>
+
+                    <p class="h4 mb-1">Others</p>
+
+                    <div class="clearfix has-separator">
+
+                        <ul class="list-unstyled d-flex flex-wrap">
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#accordion-example">Accordion</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#autocomplete-example">Autocomplete</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#bootstrap-input-spinner-example">Bootstrap Input Spinner</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#dependent-fields-example">Dependent Fields</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#intl-tel-input-example">Intl Tel Input (International Phone Numbers)</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#ladda-example">Ladda (Buttons spinners)</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#material-design">Material Design</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#passfield-example">Passfield</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#tooltip-example">Tooltip</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#signature-pad-example">Signature pad</a></li>
+                            <li class="w-50 p-1"><a class="btn-primary btn btn-sm w-100" href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#wordcharactercount-example">Wordcharactercount</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <p>Memorization/recall of any custom configuration for each plugin</p>
+                </li>
+                <li>
+                    <p>You can easily add any other external plugin (see <a href="https://www.phpformbuilder.pro/documentation/javascript-plugins.php#adding-your-own-plugins">plugins</a> section).
+                        <br>PHP Form Builder automatically adds the needed CSS and JS files to your page when you activate a plugin.
+                    </p>
+                </li>
+                <li>
+                    <p><a href="https://marketplace.visualstudio.com/items?itemName=Miglisoft.phpformbuilder">Free Visual Studio Code extension</a> available on Visual Studio Marketplace</p>
+                </li>
+                <li>
+                    <p><a href="https://github.com/migliori/sublime-phpformbuilder">Free Sublime-text 3 plugin</a> available on Github</p>
+                </li>
+                <li>
+                    <p><a href="https://github.com/chuyik/brackets-snippets">Free Bracket plugin</a> available on Github</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Themes (Frameworks) -->
+
+        <h2 id="themes">Themes (Frameworks)</h2>
+        <p>All options are ready to use and will generate HTML markup according to the chosen framework.</p>
+        <p>The default framework is <strong>Bootstrap 5</strong>.</p>
+        <p><strong>If none of the available frameworks powers your website</strong>,<br>PHP Form Builder provides a <a href="#no-framework">minimal version of Bootstrap 5 CSS</a> to design your forms.</p>
+        <section class="mb-6">
+            <h3 class="mb-2">Bootstrap 4</h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'bs4');</code></pre>
+            <h3 class="mb-2">Bootstrap 5 <small class="badge badge-secondary ms-2">Default</small></h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate');</code></pre>
+            <h3 class="mb-2">Bulma</h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'bulma');</code></pre>
+            <h3 class="mb-2">Foundation - v6.4 or higher, with XY grid</h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'foundation');</code></pre>
+            <h3 class="mb-2">Material Design</h3>
+            <p>Material Design forms are built with <a href="https://materializecss.com/">Materialize framework</a>.</p>
+            <p>You can design your forms with the Material framework both on pages built with <strong>Materialize</strong> and with <strong>Bootstrap 4</strong>.</p>
+            <ul class="mb-6">
+                <li>
+                    If your website uses the <strong>Materialize framework</strong>:
+                    <pre><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'material');</code></pre>
+                </li>
+                <li>
+                    If your website uses the <strong>Bootstrap 4 framework</strong>:
+                    <pre><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'material');
+
+        // materialize plugin
+        $form->addPlugin('materialize', '#my-form');</code></pre>
+                </li>
+            </ul>
+            <h3 class="mb-2">Tailwind</h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'tailwind');</code></pre>
+            <h3 class="mb-2">UIKit</h3>
+            <pre class="line-numbers mb-5"><code class="language-php">$form = new Form('my-form', 'horizontal', 'novalidate', 'uikit');</code></pre>
+            <h3 class="mb-2" id="no-framework">No framework</h3>
+            <p>Add the <strong>minimal Bootstrap 5 CSS</strong> to your page head, then you can build your forms with Bootstrap 5.</p>
+            <p>This style sheet only includes what is necessary to layout your responsive forms and will not break anything in the other parts of your pages.</p>
+            <pre class="line-numbers mb-5"><code class="language-php">&lt;head&gt;
+            // link to the minimal Bootstrap 5 CSS
+            &lt;link rel=&quot;stylesheet&quot; href=&quot;/phpformbuilder/templates/assets/bootstrap5-phpfb/css/bootstrap5-phpfb.min.css&quot;&gt;
+        &lt;/head&gt;
+        &lt;?php
+        // Then you can build your form
+        $form = new Form('my-form', 'horizontal', 'novalidate');</code></pre>
+            <p>More details about <code class="language-php">__construct()</code> here: <a href="#construct">Main functions > General > Construct</a></p>
+        </section>
+
+        <!-- License and Registration -->
+
+        <section class="mb-6">
+
+            <h2 id="license-registration">License and Registration</h2>
+
+            <h3>License</h3>
+            <p class="alert alert-info has-icon">1 License = 1 project</p>
+            <p>If you want to use PHP Form Builder on several websites, you've got to buy a new license for each one.</p>
+
+            <p class="h4">Standard license vs. extended license</p>
+
+            <ul class="mb-5">
+                <li>The <em>Standard license</em> allows two installations to run simultaneously: one for your local development and one for your production server.</li>
+                <li>We offer special prices for agencies and professional developers (up to 50%) with the <em>Extended license</em>. Please <a href="https://www.miglisoft.com#contact">contact us</a> for more information.</li>
+            </ul>
+
+            <h3>Registration</h3>
+            <p><strong>Before using PHP Form Builder, you must <a href="https://www.phpformbuilder.pro/documentation/quick-start-guide.php#registration" title="register your copy">register your copy</a>.</strong></p>
+            <p>Registration is for a lifetime &amp; just has to be done once for each installation (localhost/production server).</p>
+
+            <div class="alert alert-info has-icon">
+                <p>To unregister/register again with another hostname/URL:</p>
+
+                <ol>
+                    <li>Open <code class="language-php">phpformbuilder/register.php</code> to unregister your copy</li>
+                    <li>Move your folders where you want to</li>
+                    <li>Open <code class="language-php">phpformbuilder/register.php</code> to record your new path</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Upgrade PHP Form Builder -->
+
+        <section class="mb-6">
+
+            <h2 id="upgrade-phpformbuilder">Upgrade PHP Form Builder</h2>
+
+            <ol class="numbered pb-4 mb-5 has-separator">
+                <li>Backup your <code class="language-php px-2">phpformbuilder</code> folder</li>
+                <li>Replace your old <code class="language-php px-2">phpformbuilder</code> folder with the new one</li>
+                <li>Copy your <code class="language-php px-2">[your-domain]/license.php</code> from your old installation to the new one</li>
+                <li>Copy your database connection file from <code class="language-php px-2">phpformbuilder/vendor/migliori/power-lite-pdo/src/connection.php</code> to its new location</li>
+                <li>If you customized the following files/folders, copy them from your old installation to the new one:
+
+                    <ul>
+                        <li><code class="language-php px-2">phpformbuilder/mailer/email-templates-custom</code></li>
+                        <li><code class="language-php px-2">phpformbuilder/plugins-config-custom</code></li>
+                        <li><code class="language-php px-2">phpformbuilder/class/phpformbuilder/FormExtended.php</code></li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Visual Studio Code Extension -->
+
+        <section class="mb-6">
+
+            <h2 id="visual-studio-code-extension">Visual Studio Code extension</h2>
+            <p><strong>PHP Form Builder Visual Studio Code extension</strong> is available on <a href="https://marketplace.visualstudio.com/items?itemName=Miglisoft.phpformbuilder">Visual Studio Code Marketplace</a></p>
+            <p>The extension adds auto-completion for all Form Builder functions.</p>
+            <img src="documentation/assets/images/vsc-phpformbuilder.gif" width="600" height="250" loading="lazy" alt="PHP Form Builder Visual Studio Code Completions" class="img-fluid border rounded p-1">
+        </section>
+
+        <!-- Sublime Text Plugin -->
+
+        <section class="mb-6">
+
+            <h2 id="sublime-text-plugin">Sublime Text plugin</h2>
+            <p><strong>PHP Form Builder Sublime Text plugin</strong> is available on <a href="https://packagecontrol.io/packages/PHP%20Form%20Builder">Package Control</a></p>
+            <p>The plugin adds auto-completion for all Form Builder functions.</p>
+            <img src="documentation/assets/images/phpformbuilder-sublime-completions.gif" width="397" height="204" loading="lazy" alt="PHP Form Builder Sublime Text Completions" class="img-fluid border rounded p-1">
+        </section>
+
+        <!-- Changelog -->
+
+        <section class="mb-6">
+
+            <h3 id="changelog">Changelog</h3>
+            <p><strong class="text-danger">This changelog is for the current Major versions 5 & 6 only.</strong></p>
+            <p>The previous versions' changelog is available <a href="https://www.phpformbuilder.pro/documentation/help-center.php#changelog">here in the help center</a>.</p>
+            <p><strong>To migrate from version 5 to version 6 please follow this guide:</strong> <a href="https://www.phpformbuilder.pro/documentation/help-center.php#migration">https://www.phpformbuilder.pro/documentation/help-center.php#migration</a></p>
+            <!-- A PUBLIER
+                    <p class="h4 mb-1">version 5.1 (07/2022)</p>
+        <pre class="mb-5"><code class="language-php">
+        New Features:
+        Improvements:
+        Bug Fix:
+        </code></pre>
+                    END A PUBLIER -->
+            <p class="h4 mb-1">version 6.0.4 (07/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        Improvements:
+            - disable the floating labels in the date input fields
+        Bug Fix:
+            - fix email sending with BCC
+            - fix a cross-browser bug with the floating-labels plugin
+            - fix the plugins URL detection with symlinks
+            - fix php 'required' validation on empty strings
+            - fix a type error in validator::hasPattern()
+        </code></pre>
+            <p class="h4 mb-1">version 6.0.3 (06/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        Bug Fix:
+            - fix missing input placeholders in the drag & drop form builder
+        </code></pre>
+            <p class="h4 mb-1">version 6.0.2 (05/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        Bug Fix:
+            - fix PHP composer error with PHP < 8.2
+            - fix types error with php < 8.0
+            - fix floating labels position in Modal forms
+            - disable the floating labels in tinymce textareas
+        </code></pre>
+            <p class="h4 mb-1">version 6.0.1 (05/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        Bug Fix:
+            - fix the plugins path & URL when the form builder is in a subfolder
+            - fix the addCountry method when there's multiple country fields on the same page.
+        </code></pre>
+            <p class="h4 mb-1">version 6.0 (05/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        Breaking changes:
+            - PHP Form Builder now uses a global autoloader for the Form Builder's classes, the mailer, the database and pagination classes
+        New Features:
+            - add the Altcha plugin with Anti-SPAM features - https://www.phpformbuilder.pro/documentation/javascript-plugins.php#recaptchav3-example
+            - add the Floating Labels plugin - https://www.phpformbuilder.pro/documentation/javascript-plugins.php#floating-labels
+            - add the "addError($field, $message)" function to the Validator
+        Improvements:
+            - redesign the drag & drop form builder with code refactoring and performance improvements
+            - add a global autoloader for the Form Builder's classes, the mailer, the database and pagination classes
+            - improve robustness, code quality and reliability with PHPSTAN's highest standards (level 8)
+            - move the Database & pagination classes to the "vendor" folder and use the Github public package (https://github.com/migliori/power-lite-pdo)
+            - add the "getIncludes($debug = false)" function to get the list of all the plugins dependencies (JS & CSS)
+            - add the "getJsCode($debug = false)" function to get the Javascript code of the activated plugins
+            - change the naming convention of the php variables from snake_case to smallCamelCase
+            - move the bottom margins in Bootstrap forms from rows to columns
+        Bug Fix:
+            - fix a bug with the file uploader with multiple instances and required files
+            - fix a type error in the file uploader with php 8.3+
+            - fix Tinymce's filemanager bug with PHP ^8.0
+            - fix drag & drop form builder's input patterns for Chrome - https://github.com/GoogleChrome/chromium-dashboard/issues/3106
+        </code></pre>
+            <p class="h4 mb-1">version 5.3 (01/2024)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+            - add the code for Recaptcha to be properly loaded in Ajax forms
+        Improvements:
+            - add php type hinting and enable PHP strict_types
+            - fix PHP 8.3 deprecation warnings
+            - review PHP Standard compliance with PHPCS and PHPCBS - Standard:PHPCompatibility 7.4-8.3
+            - add SQL group_by clause in DB->select() '$extras' argument
+            - update the Signature Pad plugin to the latest version (v4.1.6)
+            - add the 'data-height' attribute to the Signature Pad input
+        Bug Fix:
+            - repair the database getLastInsertId() function
+            - fix "update" queries using the same fieldname in both values and where clause
+            - fix Deprecated error in class.fileuploader.php
+        </code></pre>
+            <p class="h4 mb-1">version 5.2.1 (01/2023)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+            - Support of different RDBMS with PDO drivers (MySQL/MariaDB, Oracle, PostgreSQL, Firebird)
+            - add new functions to the database PDO wrapper: https://www.phpformbuilder.pro/documentation/php-pdo-database-class.php
+        Improvements:
+            - Improve Dependent fields events management & performance
+            - handle required fields validation inside nested dependent fields
+        Bug Fix:
+            - The events on inputs with the Pretty checkbox plugin enabled will now work as expected
+            - update the Passfield plugin to solve a Popover bug with the latest Bootstrap
+            - memorization of the 'inline' checkbox/radio value in the drag & drop form builder
+        </code></pre>
+            <p class="h4 mb-1">version 5.2 (10/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+            - add new functions to the database PDO wrapper: https://www.phpformbuilder.pro/documentation/php-pdo-database-class.php
+            - add the "limit" argument to the "select" function of the database PDO wrapper
+            - add the getOptions() function to show the list of the current options (or single/multiple options values)
+        Improvements:
+            - add the "utf-8" charset in the DB connection settings
+            - upgrade the Slimselect plugin to the latest version v1.27.1
+        Bug Fix:
+            - Dependent fields will not be posted anymore when they're hidden
+            - fix the broken links in the index.html if the Codecanyon package
+        </code></pre>
+            <p class="h4 mb-1">version 5.1 (07/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+            - add ability to copy (duplicate) fields in the Drag and Drop form builder
+        Improvements:
+            - add max-height + vertical scrollbars to the Drag and Drop form builder
+            - disable the hcaptcha's recaptcha compat option
+            - update the template's ajax-loaded-multiple-forms
+            - update the Select2 plugin to its latest version 4.1.0-rc.0
+        Bug Fix:
+            - edit the intltelinput Javascript to set the full phone value in real time (was buggy since the last plugin upgrade)
+            - fix formValidation plugin not revalidating after removing file with fileuploader when upload limit is set to 1
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.6 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+            - ability to center the HCaptchas with the Drag & Drop
+        Improvements:
+            - add a "no action" option in the drag & drop for the form action after validation
+            - add a regexp and helper text to validate the components names entered by the user in the Drag & Drop
+        Bug Fix:
+            - fix use of array_key_last with php &lt; 7.3
+            - fix formvalidation code for Tinymce required fields
+            - remove Tinymce from the compiled Javascript to avoid 404 errors on Tinymce dependencies
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.5 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        Improvements:
+            - show the warning message on file uploader failure
+            - add a warning message in the drag & drop on database update if no field has been specified in the WHERE clause
+            - show the HTML code in the drag & drop HTML components
+            - add "copy" buttons to all the code blocks in drag & drop and documentation
+        Bug Fix:
+            - fix paths of the file uploader email attachments generated by the drag & drop form builder
+            - fix and improve the plugins loading system after POST with Ajax
+            - fix the database insert code generated by the drag & drop
+            - fix the database update code generated by the drag & drop
+            - fix script loading & triggering issues with Ajax
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.4 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        Improvements:
+            - Improve the drag & drop layout
+        Bug Fix:
+            - fix the File uploader code with drag & drop and Ajax
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.3 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        Improvements:
+            - add instructions for CMS users in the Quickstart Guide
+            - remove Typography CSS from the custom minimal Bootstrap 5 CSS version (templates/assets/bootstrap5-phpfb)
+            - replace the jQuery code generated by the Drag & drop form builder with a clean Vanilla JavaScript code
+        Bug Fix:
+            - replace a stupid white text on white background in the drag & drop form code modal
+            - edit the LCSwitch plugin to make it work with inputs inside labels
+            - add the Materialize base JavaScript, which was missing when loading forms with Ajax
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.2 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        Bug Fix:
+            - solve a bug with the file uploader & images
+        </code></pre>
+            <p class="h4 mb-1">version 5.0.1 (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        New Features:
+        Improvements:
+            - add instructions for CMS users in the Quickstart Guide
+        Bug Fix:
+            - replace a stupid white text on white background in the drag & drop form code modal
+            - edit the LCSwitch plugin to make it work with inputs inside labels
+        </code></pre>
+            <p class="h4 mb-1">version 5.0 - Major update (03/2022)</p>
+            <pre class="mb-5"><code class="language-php">
+        - upgrade to Bootstrap 5
+        - remove jQuery except for the plugins that require it
+        - add Bulma configuration &amp; templates
+        - add Tailwind configuration &amp; templates
+        Plugins:
+            - update all the plugins to their latest version
+            - rewrite all the jQuery instantiation codes in Vanilla JS for all non-jQuery plugins (in plugins-config/*.xml files)
+            - add a new Accordion plugin for accordion step forms
+            - replace jQuery autocomplete by autoComplete.js (vanilla js)
+            - replace jQuery captcha (realPerson) by js-captcha (vanilla js)
+            - add jsCaptcha server-side validation
+            - add hCaptcha plugin
+            - remove the old recaptcha v2 plugin
+            - replace the jQuery-Color-Picker by a new colorpicker plugin (vanilla js)
+            - rewrite the Dependent Fields jQuery plugin in vanilla js
+            - replace the modal plugin by a new lightweight accessible vanilla js modal plugin
+            - rewrite the Nice Check jQuery plugin in vanilla js
+            - replace the Popover and jQuery Tooltip plugin with the amazing vanilla js TippyJs
+            - activate plugins with data-attributes instead of classnames to avoid conflicts. ie: 'data-input-spinner=true' instead of 'class=input-spinner'
+            - update & rewrite the lcSwitch JavaScript & replace themes by data-attributes (data-oncolor and data-oncss)
+            - improve the website accessibility with the new excellent Chrome CSS Overview tool
+            - remove the "dist" folders in the plugins folders and move the files directly in thir parent folder
+            - update Bootswatch themes and add them to the Bootstrap 4 + Bootstrap 5 templates
+        Functions & code:
+            - replace the MySQL class with the PDO version (https://www.phpclasses.org/package/10844-PHP-Access-MySQL-databases-using-the-PDO-extension.html)
+            - add a new addheading() method
+            - add a new buildAlert() static method
+            - add a new addTimeSelect() method
+            - remove the unused 'type' argument in addFileUpload() function
+            - improve the 'sent_message' option behaviour in the sendMail() method
+            - replace the centerButtons() function with the new centerContent() function
+            - rename the groupInputs() function by groupElements() for a better consistency
+            - remove the form inline layout - use horizontzal with grouped fields instead
+            - split the Form class into PHP Traits to improve the readability of the code and to group the functions in a logical way
+            - lint code with PHPCS & Sonarlint
+        Templates:
+            - add new templates for each framework
+            - replace All the jQuery code with Vanilla JS code
+            - replace the complex "email-styles" form with a basic "email-templates" form - easier to understand
+        Drag & drop:
+            - Complete update with integration of new frameworks, plugins and features
+            </code></pre>
+        </section>
+
+        <!-- Sources &amp; Credits -->
+
+        <section class="mb-6">
+
+            <h2 id="credits">Sources &amp; Credits</h2>
+            <p><strong>Thanks so much to:</strong></p>
+
+            <ul class="mb-5">
+                <li><a href="https://github.com/stuartjnelson/badger-accordion">https://github.com/stuartjnelson/badger-accordion</a></li>
+                <li><a href="https://github.com/TarekRaafat/autoComplete.js">https://github.com/TarekRaafat/autoComplete.js</a></li>
+                <li><a href="https://github.com/shaack/bootstrap-input-spinner">https://github.com/shaack/bootstrap-input-spinner</a></li>
+                <li><a href="https://silviomoreto.github.io/bootstrap-select/">https://silviomoreto.github.io/bootstrap-select/</a></li>
+                <li><a href="https://github.com/Simonwep/pickr">https://github.com/Simonwep/pickr</a></li>
+                <li><a href="https://innostudio.de/fileuploader/">https://innostudio.de/fileuploader/</a></li>
+                <li><a href="https://formvalidation.io/">https://formvalidation.io/</a></li>
+                <li><a href="https://hcaptcha.com">https://hcaptcha.com</a></li>
+                <li><a href="https://github.com/fronteed/icheck">https://github.com/fronteed/icheck</a></li>
+                <li><a href="https://rvera.github.io/image-picker/">https://rvera.github.io/image-picker/</a></li>
+                <li><a href="https://github.com/jackocnr/intl-tel-input">https://github.com/jackocnr/intl-tel-input</a></li>
+                <li><a href="https://github.com/robiveli/js-captcha">https://github.com/robiveli/js-captcha</a></li>
+                <li><a href="https://github.com/hakimel/Ladda">https://github.com/hakimel/Ladda</a></li>
+                <li><a href="https://lcweb.it/lc-switch-javascript-plugin">https://lcweb.it/lc-switch-javascript-plugin</a></li>
+                <li><a href="https://wakirin.github.io/Litepicker/">https://wakirin.github.io/Litepicker/</a></li>
+                <li><a href="https://materializecss.com/">https://materializecss.com/</a></li>
+                <li><a href="https://github.com/Ghosh/micromodal">https://github.com/Ghosh/micromodal</a></li>
+                <li><a href="https://antelle.net/passfield/">https://antelle.net/passfield/</a></li>
+                <li><a href="https://amsul.ca/pickadate.js/">https://amsul.ca/pickadate.js/</a></li>
+                <li><a href="https://atomiks.github.io/tippyjs/">https://atomiks.github.io/tippyjs/</a></li>
+                <li><a href="https://github.com/lokesh-coder/pretty-checkbox">https://github.com/lokesh-coder/pretty-checkbox</a></li>
+                <li><a href="https://www.google.com/recaptcha/">https://www.google.com/recaptcha/</a></li>
+                <li><a href="https://select2.org/">https://select2.org/</a></li>
+                <li><a href="https://github.com/szimek/signature_pad">https://github.com/szimek/signature_pad</a></li>
+                <li><a href="https://slimselectjs.com">https://slimselectjs.com</a></li>
+                <li><a href="https://www.tiny.cloud/tinymce/">https://www.tiny.cloud/tinymce/</a></li>
+                <li><a href="https://github.com/blackbelt/php-validation">blackbelt&#39;s php-validation class</a></li>
+                <li><a href="https://github.com/migliori/power-lite-pdo">https://github.com/migliori/power-lite-pdo</a></li>
+                <li><a href="https://www.responsivefilemanager.com/">https://www.responsivefilemanager.com/</a>*</li>
+                <li><a href="https://github.com/PHPMailer/PHPMailer/">https://github.com/PHPMailer/PHPMailer</a></li>
+                <li><a href="https://github.com/jjriv/emogrifier">https://github.com/jjriv/emogrifier</a></li>
+                <li><a href="https://github.com/muicss/loadjs">https://github.com/muicss/loadjs</a></li>
+
+            </ul>
+
+            <h3>About Responsive File Manager</h3>
+            <p>Responsive File Manager is under <strong>Creative Commons Attribution-NonCommercial 3.0 Unported License</strong>.
+                <br>The author kindly allowed me to include it with PHP Form Builder.
+                <br> PHP Form Builder users can use it <strong>without limitation for non-commercial projects</strong>.
+            </p>
+            <p>If you want to use Responsive File Manager in <strong>commercial projects</strong>, don't hesitate to <a href="https://www.responsivefilemanager.com/">contact the author</a> and ask him for his agreement. A small donation is welcome.</p>
+        </section>
+
+        <!-- About -->
+
+        <section class="mb-6">
+            <p>&nbsp;</p>
+
+            <h2 id="miglisoft">About</h2>
+            <p>I'm a french web developer; I work on many enthusiastic projects for clients as a freelancer, mainly handmade websites or web applications.</p>
+            <p>I spend time every day helping people using PHP Form Builder worldwide.</p>
+            <p>Feel free to <a href="https://www.miglisoft.com/#contact">contact me</a> about any project/request</p>
+
+            <hr>
+            <p><strong>Others works</strong></p>
+
+            <div class="row mb-5">
+
+                <div class="col-sm-6 has-separator">
+
+                    <h3>PHP CRUD Generator</h3>
+                    <figure>
+                        <a href="https://www.phpcrudgenerator.com/" class="d-block mb-2">
+                                    <img src="https://www.phpformbuilder.pro/assets/images/phpcg-preview.png" width="520" height="264" loading="lazy" class="img-fluid img-thumbnail" alt="PHP CRUD Generator">
+                                </a>
+                        <figcaption><strong>PHP CRUD Generator</strong>
+                            <br>Simple application to build Bootstrap backoffice for your website
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-sm-6 has-separator">
+
+                    <h3>Slider Maker</h3>
+                    <figure>
+                        <a href="https://www.slider-maker.com/" class="d-block mb-2">
+                                    <img src="https://www.phpformbuilder.pro/assets/images/slider-maker-preview.png" width="520" height="264" loading="lazy" class="img-fluid img-thumbnail" alt="jQuery Slideshow builder">
+                                </a>
+                        <figcaption><strong>How to build jQuery slideshows &amp; galleries without coding</strong>
+                            <br>Login to the admin panel and create high-quality, responsive slideshows in a visual way
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-sm-6 has-separator">
+
+                    <h3>TinyMce Bootstrap plugin</h3>
+                    <figure>
+                        <a href="https://www.tinymce-bootstrap-plugin.com/" class="d-block mb-2">
+                                    <img src="https://www.phpformbuilder.pro/assets/images/tinymce-bootstrap-plugin-preview.png" width="520" height="264" loading="lazy" class="img-fluid img-thumbnail" alt="Bootstrap toolbar for tinyMce">
+                                </a>
+                        <figcaption><strong>TinyMce plugin to insert Bootstrap elements into your page</strong></figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-sm-6 has-separator">
+
+                    <h3>DMCA Sender - Anti-Piracy solution</h3>
+                    <figure>
+                        <a href="https://www.hack-hunt.com/" class="d-block mb-2">
+                                    <img src="https://www.phpformbuilder.pro/assets/images/dmca-sender-preview.jpg" width="520" height="264" loading="lazy" class="img-fluid img-thumbnail" alt="DMCA Sender - Anti-Piracy solution">
+                                </a>
+                        <figcaption><span class="fw-bold">DMCA Sender - Online SaaS application to find illegal download links to your softwares &amp; applications.<br>Auto-send your DMCA Takedown Notice</span></figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!--====  End of COMMON PART  ====-->
+    </main>
+    <script>
+    const dirPath = 'documentation/';
+    </script>
+    <script src="documentation/assets/javascripts/loadjs.min.js"></script>
+    <script src="documentation/assets/javascripts/project.min.js"></script>
+</body>
+
+</html>
